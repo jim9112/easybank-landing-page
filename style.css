@@ -1,0 +1,13 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

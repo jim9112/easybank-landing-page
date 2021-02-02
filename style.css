@@ -1,8 +1,25 @@
+:root {
+    --dark-blue: hsl(233, 26%, 24%);
+    --lime-green: hsl(136, 65%, 51%);
+    --bright-cyan: hsl(192, 70%, 51%);
+    --grayish-blue: hsl(233, 8%, 62%);
+    --light-grayish-blue: hsl(220, 16%, 96%);
+    --very-light-gray: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
+}
 * {
     margin: 0px;
     padding: 0px;
+    border: none;
 }
-
+html {
+    font-family: 'Public Sans', sans-serif;
+    line-height: 1.2;
+}
+body {
+    font-size: 18px;
+    
+}
 a {
     text-decoration: none;
 }
@@ -10,4 +27,100 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 10px 0px;
+}
+nav a {
+    color: gray;
+}
+nav a:not(:last-child) {
+    padding-right: 10px;
+}
+
+nav a:hover {
+    color: black;
+}
+
+/* text */
+p {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: gray;
+}
+h1 {
+    font-size: 2.93rem;
+    font-weight: 300;
+}
+h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+h4 {
+    font-size: 1.4375rem;
+    font-weight: 300;
+}
+
+/* helper classes */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.bottom-gutter {
+    margin-bottom: 1.875rem;
+}
+.invite-button {
+    width: 165px;
+    height: 45px;
+    border-radius: 25px;
+    background: linear-gradient(to right, var(--lime-green), var(--bright-cyan) );
+    color: var(--white);
+    font-weight: 700;
+}
+
+/* header */
+
+/* intro */
+#intro {
+    background: var(--very-light-gray) url(./images/bg-intro-desktop.svg) no-repeat right -550px top -250px;
+    min-height: 650px;
+}
+.cta {
+    max-width: 440px;
+    padding-left: 160px;
+    padding-top: 160px;
+}
+.cta h1 {
+    padding-bottom: 1.875rem;
+}
+.cta p {
+    padding-bottom: 1.875rem;
+}
+
+/* why choose */
+#why-choose {
+    min-height: 650px;
+    background: var(--light-grayish-blue);
+    padding-left: 160px;
+    padding-top: 110px;
+}
+
+/* articles */
+#articles {
+    min-height: 650px;
+    background: var(--very-light-gray);
+    padding-left: 160px;
+    padding-top: 110px;
+}
+
+.article-card {
+    background: var(--white);
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1rem
+}
+.article-card img {
+    width: 100%;
+    object-fit: contain;
 }

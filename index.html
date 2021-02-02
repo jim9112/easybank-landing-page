@@ -6,6 +6,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Easybank landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -24,75 +26,91 @@
     <a href="#">Blog</a>
     <a href="#">Careers</a>
   </nav>
-  <button type="button">Request Invite</button>
+  <button class="invite-button" type="button">Request Invite</button>
 </header>
 
 <section id="intro">
-  <div>
+  <div class="cta">
     <h1>Next generation digital banking</h1>
     <p>Take your financial life online. Your Easybank account will be a one-stop-shop 
       for spending, saving, budgeting, investing, and much more.</p>
-    <button type="button">Request Invite</button>
+    <button class="invite-button" type="button">Request Invite</button>
   </div>
 </section>
 
 <section id="why-choose">
-  <div>
-    <div>
-      Why choose Easybank?
   
-      We leverage Open Banking to turn your bank account into your financial hub. Control 
+    <div class="header">
+      <h2 class="bottom-gutter">
+        Why choose Easybank?
+      </h2>
+      <p class="bottom-gutter">
+        We leverage Open Banking to turn your bank account into your financial hub. <br> Control 
       your finances like never before.
+      </p>
+    </div>
+  <div class="card-container">
+    <div>
+      <img class="bottom-gutter" src="./images/icon-online.svg" alt="online banking icon">
+      <h4 class="bottom-gutter" >Online Banking</h4>
+      <p>Our modern web and mobile applications allow you to keep track of your finances 
+        wherever you are in the world.</p>
+      
     </div>
     <div>
-      Online Banking
-      Our modern web and mobile applications allow you to keep track of your finances 
-      wherever you are in the world.
+      <img class="bottom-gutter" src="./images/icon-budgeting.svg" alt="simple budgeting icon">
+      <h4 class="bottom-gutter" >Simple Budgeting</h4>
+      <p>See exactly where your money goes each month. Receive notifications when you’re 
+        close to hitting your limits.</p>
     </div>
     <div>
-      Simple Budgeting
-      See exactly where your money goes each month. Receive notifications when you’re 
-      close to hitting your limits.
+      <img class="bottom-gutter" src="./images/icon-onboarding.svg" alt="onboarding icon">
+      <h4 class="bottom-gutter" >Fast Onboarding</h4>
+      <p>We don’t do branches. Open your account in minutes online and start taking control 
+        of your finances right away.</p>
     </div>
     <div>
-      Fast Onboarding
-    We don’t do branches. Open your account in minutes online and start taking control 
-    of your finances right away.
-    </div>
-    <div>
-      Open API
-    Manage your savings, investments, pension, and much more from one account. Tracking 
-    your money has never been easier.
+      <img class="bottom-gutter" src="./images/icon-api.svg" alt="api icon">
+      <h4 class="bottom-gutter" >Open API</h4>
+      <p>Manage your savings, investments, pension, and much more from one account. Tracking 
+        your money has never been easier.</p>
     </div>
   </div>
 </section>
   
 <section id="articles">
-  <div>Latest Articles</div>
-  <div>
-    By Claire Robinson
-    Receive money in any currency with no fees
-    The world is getting smaller and we’re becoming more mobile. So why should you be 
-    forced to only receive money in a single …
+  <div> <h2 class="bottom-gutter" >Latest Articles</h2> </div>
+  <div class="card-container" >
+    <div class="article-card" > 
+      <img src="./images/image-currency.jpg" alt="currency">
+      <span class="author">By Claire Robinson</span>
+      <h4>Receive money in any currency with no fees</h4>
+      <p>The world is getting smaller and we’re becoming more mobile. So why should you be 
+        forced to only receive money in a single …</p>
+    </div>
+    <div class="article-card" >
+      <img src="./images/image-restaurant.jpg" alt="restaurant">
+      <span class="author">By Wilson Hutton</span>
+      <h4>Treat yourself without worrying about money</h4>
+      <p>Our simple budgeting feature allows you to separate out your spending and set 
+        realistic limits each month. That means you …</p>
+    </div>
+    <div class="article-card" >
+      <img src="./images/image-plane.jpg" alt="plane">
+      <span class="author">By Wilson Hutton</span>
+      <h4>Take your Easybank card wherever you go</h4>
+      <p>We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
+        while you’re abroad. We’ll even show you …</p>
+    </div>
+    <div class="article-card" >
+      <img src="./images/image-confetti.jpg" alt="confetti">
+      <span class="author">By Claire Robinson</span>
+      <h4>Our invite-only Beta accounts are now live!</h4>
+      <p>After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
+        It’s easy to request an invite through the site ...</p>
+    </div>
   </div>
-  <div>
-    By Wilson Hutton
-    Treat yourself without worrying about money
-    Our simple budgeting feature allows you to separate out your spending and set 
-    realistic limits each month. That means you …
-  </div>
-  <div>
-    By Wilson Hutton
-    Take your Easybank card wherever you go
-    We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
-    while you’re abroad. We’ll even show you …
-  </div>
-  <div>
-    By Claire Robinson
-    Our invite-only Beta accounts are now live!
-    After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
-    It’s easy to request an invite through the site ...
-  </div>
+  
 </section>
 
 <footer>
@@ -104,7 +122,7 @@
     <a href="#">Support</a>
     <a href="#">Privacy Policy</a>
   </nav>
-  <button type="button">Request Invite</button>
+  <button class="invite-button" type="button">Request Invite</button>
   <span>© Easybank. All Rights Reserved</span>
   
 

@@ -28,6 +28,9 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 10px 0px;
+    z-index: 1000;
+    position: relative;
+    background: white;
 }
 nav a {
     color: gray;
@@ -78,13 +81,17 @@ h4 {
     color: var(--white);
     font-weight: 700;
 }
-
+.grid-flex-right {
+    justify-self: right;
+}
 /* header */
 
 /* intro */
 #intro {
     background: var(--very-light-gray) url(./images/bg-intro-desktop.svg) no-repeat right -550px top -250px;
-    min-height: 650px;
+    height: 650px;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 .cta {
     max-width: 440px;
@@ -97,7 +104,16 @@ h4 {
 .cta p {
     padding-bottom: 1.875rem;
 }
-
+.cta-image {
+    height: 650px;
+    position: relative;
+}
+.cta-image img {
+    /* background: url(./images/bg-intro-desktop.svg)  no-repeat right -550px top -250px; */
+    width: 100%;
+    position: absolute;
+    top: -55px;
+}
 /* why choose */
 #why-choose {
     min-height: 650px;
@@ -123,4 +139,28 @@ h4 {
 .article-card img {
     width: 100%;
     object-fit: contain;
+}
+/* footer */
+footer {
+    background: var(--dark-blue);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 45px 160px;
+}
+.bottom-nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+.bottom-nav a {
+    color: var(--very-light-gray);
+}
+.footer-end {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: end;
+    gap: 1.5rem;
+}
+.copyright {
+    color: var(--grayish-blue)
 }

@@ -63,6 +63,10 @@ h4 {
     font-weight: 300;
 }
 
+
+.header {
+    /* margin-left: 150px; */
+}
 /* helper classes */
 .card-container {
     display: grid;
@@ -96,7 +100,7 @@ h4 {
 }
 .cta {
     max-width: 440px;
-    padding-left: 160px;
+    padding-left: 100px;
     padding-top: 160px;
 }
 .cta h1 {
@@ -120,7 +124,8 @@ h4 {
     min-height: 650px;
     background: var(--light-grayish-blue);
     display: grid;
-    justify-content: center;
+    /* justify-content: center; */
+    padding: 100px;
 }
 
 /* articles */
@@ -128,7 +133,8 @@ h4 {
     min-height: 650px;
     background: var(--very-light-gray);   
     display: grid;
-    justify-content: center;
+    /* justify-content: center; */
+    padding: 100px;
 }
 
 .article-card {
@@ -182,6 +188,8 @@ footer {
         order: 2;
         padding: 0px;
         margin: auto;
+        text-align: center;
+        padding-bottom: 100px;
     }
     .cta-image {
         order: 1;
@@ -207,9 +215,18 @@ footer {
     .card img {
         justify-self: center;
     }
+    .cta-image img {
+        top: -150px;
+    }
     .header {
         width: 80%;
         margin: auto;
         text-align: center;
+    }
+    #why-choose {
+        padding: 20px 0px;
+    }
+    #articles {
+        padding: 20px 0px;
     }
 }

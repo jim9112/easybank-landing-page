@@ -88,7 +88,8 @@ h4 {
 
 /* intro */
 #intro {
-    background: var(--very-light-gray) url(./images/bg-intro-desktop.svg) no-repeat right -550px top -250px;
+    /* background: var(--very-light-gray) url(./images/bg-intro-desktop.svg) no-repeat right -550px top -250px; */
+    background: var(--very-light-gray);
     height: 650px;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -105,11 +106,11 @@ h4 {
     padding-bottom: 1.875rem;
 }
 .cta-image {
+    background: url(./images/bg-intro-desktop.svg)  no-repeat left top -250px;
     height: 650px;
     position: relative;
 }
 .cta-image img {
-    /* background: url(./images/bg-intro-desktop.svg)  no-repeat right -550px top -250px; */
     width: 100%;
     position: absolute;
     top: -55px;
@@ -118,16 +119,16 @@ h4 {
 #why-choose {
     min-height: 650px;
     background: var(--light-grayish-blue);
-    padding-left: 160px;
-    padding-top: 110px;
+    display: grid;
+    justify-content: center;
 }
 
 /* articles */
 #articles {
     min-height: 650px;
-    background: var(--very-light-gray);
-    padding-left: 160px;
-    padding-top: 110px;
+    background: var(--very-light-gray);   
+    display: grid;
+    justify-content: center;
 }
 
 .article-card {
@@ -163,4 +164,52 @@ footer {
 }
 .copyright {
     color: var(--grayish-blue)
+}
+
+@media (max-width: 900px) {
+    .cta-image img {
+        top: 5px;
+    }
+}
+@media (max-width: 800px) {
+    #intro {
+        background: url(./images/bg-intro-mobile.svg)  no-repeat left top -250px;
+        height: auto;
+        grid-template-columns: 100% ;
+        justify-content: center;
+    }
+    .cta {
+        order: 2;
+        padding: 0px;
+        margin: auto;
+    }
+    .cta-image {
+        order: 1;
+    }
+    .cta-image img {
+        top: -300px;
+    }
+}
+@media (max-width: 500px) {
+    .mobile-hide {
+        display: none;
+    }
+    .article-card {
+        width: 80%;
+        margin: auto;
+    }
+    .card {
+        width: 80%;
+        margin: auto;
+        display: grid;
+        text-align: center;
+    }
+    .card img {
+        justify-self: center;
+    }
+    .header {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
 }
